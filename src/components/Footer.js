@@ -47,9 +47,7 @@ const Footer = ({ pageNumber, totalPage, setPage }) => {
                         }}
                     />
                 ) : (
-                    <View
-                        style={{ width: 100 }}
-                    ></View>
+                    <View style={{ width: 100 }} />
                 )
             }
             <Text
@@ -60,26 +58,34 @@ const Footer = ({ pageNumber, totalPage, setPage }) => {
             >
                 {pageNumber}/{totalPage}
             </Text>
-            <PageButton
-                type="outline"
-                iconRight
-                icon={
-                    <MaterialIcons
-                        name="arrow-forward"
-                        size={15}
-                        color={'white'}
+            {pageNumber !== totalPage
+                ? (
+                    <PageButton
+                        type="outline"
+                        iconRight
+                        icon={
+                            <MaterialIcons
+                                name="arrow-forward"
+                                size={15}
+                                color={'white'}
+                            />
+                        }
+                        title={`Page ${pageNumber + 1}`}
+                        titleStyle={{
+                            color: `${config.theme.whiteColor}`,
+                            marginRight: 10,
+                            fontFamily: `${config.theme.fontFamily}`
+                        }}
+                        onPress={() => {
+                            setPage(pageNumber += 1)
+                        }}
                     />
-                }
-                title={`Page ${pageNumber + 1}`}
-                titleStyle={{
-                    color: `${config.theme.whiteColor}`,
-                    marginRight: 10,
-                    fontFamily: `${config.theme.fontFamily}`
-                }}
-                onPress={() => {
-                    setPage(pageNumber += 1)
-                }}
-            />
+                ) : (
+                    <View
+                        style={{ width: 100 }}
+                    />
+                )}
+
         </Container>
     )
 }

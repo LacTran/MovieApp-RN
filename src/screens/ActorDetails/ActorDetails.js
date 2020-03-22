@@ -55,7 +55,6 @@ const ActorDetailsScreen = ({ navigation }) => {
     const [joinedMovies, setJoinedMovies] = useState([])
     const [page, setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(null)
-
     useEffect(() => {
         async function fetchJoinedMoviesData() {
             setIsLoading(true);
@@ -68,7 +67,7 @@ const ActorDetailsScreen = ({ navigation }) => {
             }
         }
         fetchJoinedMoviesData()
-    }, [data,page])
+    }, [data, page])
 
     return (
         <Container>
@@ -113,7 +112,7 @@ const ActorDetailsScreen = ({ navigation }) => {
                                     font={config.theme.fontFamilyBold}
                                     textAlign="center"
                                 >
-                                    {moment(data.birthday).format('DD-MM-YYYY')}
+                                    {data.birthday ? moment(data.birthday).format('DD-MM-YYYY') : 'Birthday unknown'}
                                 </Text>
                             </ImageContainer>
                             <ContentContainer>
@@ -132,7 +131,7 @@ const ActorDetailsScreen = ({ navigation }) => {
                                     font={config.theme.fontFamilyMedium}
                                     textAlign="left"
                                 >
-                                    {data.biography}
+                                    {data.biography ? data.biography : 'No biography available!'}
                                 </Text>
                                 <Spacer />
                                 <Text

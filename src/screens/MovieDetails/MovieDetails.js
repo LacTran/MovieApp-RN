@@ -252,17 +252,12 @@ const MovieDetailsScreen = ({ navigation }) => {
                                     </Text>
                                     <View
                                         style={{
-                                            flex: 1,
-                                            flexDirection: 'column',
                                             marginTop: 10,
                                         }}
                                     >
                                         <FlatList
                                             style={{
                                                 marginBottom: 0
-                                            }}
-                                            contentContainerStyle={{
-                                                width: "100%",
                                             }}
                                             horizontal={true}
                                             keyExtractor={(item, index) => index}
@@ -285,15 +280,29 @@ const MovieDetailsScreen = ({ navigation }) => {
                                                             }
                                                         }}
                                                     >
-                                                        <Image
-                                                            source={{ uri: profileURL }}
-                                                            style={{
-                                                                minHeight: 70,
-                                                                width: "100%",
-                                                                resizeMode: 'contain',
-                                                                borderRadius: 12.5,
-                                                            }}
-                                                        />
+                                                        {
+                                                            /null/.test(profileURL) ? (
+                                                                <Image
+                                                                    source={require('../../static/error.png')}
+                                                                    style={{
+                                                                        height: 70,
+                                                                        width: 100,
+                                                                        resizeMode: 'contain',
+                                                                        borderRadius: 12.5,
+                                                                    }}
+                                                                />
+                                                            ) : (
+                                                                    <Image
+                                                                        source={{ uri: profileURL }}
+                                                                        style={{
+                                                                            minHeight: 70,
+                                                                            width: "100%",
+                                                                            resizeMode: 'contain',
+                                                                            borderRadius: 12.5,
+                                                                        }}
+                                                                    />
+                                                                )
+                                                        }
                                                         <Text
                                                             textColor={config.theme.blueColor4}
                                                             size={config.theme.fontSizeSmall}

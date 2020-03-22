@@ -8,11 +8,14 @@ import { getMovieDetails } from '../../../services/services';
 
 const Container = styled.View`
     flex-direction: column;
+    align-items: center;
+    padding-horizontal: 10px;
 `
 
 const Card = styled.TouchableOpacity`
     flex-direction: column;
     width: 45%;
+    align-items: center;
     height: 250px;
     margin-bottom: 25px;
     border-radius: 12.5px;
@@ -35,59 +38,79 @@ const RecommendedList = ({
                 contentContainerStyle={{
                     alignItems: 'center',
                     marginBottom: 15,
-                    marginTop: 20
+                    marginTop: 20,
+                    paddingHorizontal: 25
                 }}
                 columnWrapperStyle={{
-                    justifyContent: 'space-between'
+                    justifyContent: 'space-between',
+                    width: '100%'
                 }}
                 style={{ flex: 1 }}
                 data={data}
                 scrollEnabled={false}
                 keyExtractor={(item, index) => index}
                 numColumns={2}
-                renderItem={({ item }) => {
+                renderItem={({ item, index }) => {
                     const URL = `${baseURL}${size}${item.poster_path}`;
                     return (
-                        <Card
-                            onPress={async () => {
-                                setIsLoading(true)
-                                try {
-                                    const movieDetails = await getMovieDetails(item.id)
-                                    navigation.navigate('MovieDetails', { data: movieDetails.data })
-                                }
-                                finally {
-                                    setIsLoading(false)
-                                }
-                            }}
-                        >
-                            <Image
-                                source={{ uri: URL }}
-                                style={{
-                                    minHeight: 150,
-                                    height: 180,
-                                    width: "100%",
-                                    resizeMode: 'stretch',
-                                    flex: 1
-                                }}
-                            />
-                            <View
-                                style={{
-                                    flex: 1,
-                                    maxHeight: 60,
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: 5
+                        <>
+                            <Card
+                                onPress={async () => {
+                                    setIsLoading(true)
+                                    try {
+                                        const movieDetails = await getMovieDetails(item.id)
+                                        navigation.navigate('MovieDetails', { data: movieDetails.data })
+                                    }
+                                    finally {
+                                        setIsLoading(false)
+                                    }
                                 }}
                             >
-                                <Text
-                                    textColor={config.theme.blueColor4}
-                                    size={config.theme.fontSizeSmall}
-                                    textAlign="center"
+                                {/null/.test(URL)
+                                    ? (
+                                        <Image
+                                            source={require('../../../static/error.png')}
+                                            style={{
+                                                minHeight: 150,
+                                                height: 180,
+                                                width: "100%",
+                                                resizeMode: 'contain',
+                                                flex: 1
+                                            }}
+                                        />
+                                    )
+                                    : (
+                                        <Image
+                                            source={{ uri: URL }}
+                                            style={{
+                                                minHeight: 150,
+                                                height: 180,
+                                                width: "100%",
+                                                resizeMode: 'stretch',
+                                                flex: 1
+                                            }}
+                                        />
+                                    )}
+
+                                <View
+                                    style={{
+                                        flex: 1,
+                                        maxHeight: 60,
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        padding: 5
+                                    }}
                                 >
-                                    {item.title}
-                                </Text>
-                            </View>
-                        </Card>
+                                    <Text
+                                        textColor={config.theme.blueColor4}
+                                        size={config.theme.fontSizeSmall}
+                                        textAlign="center"
+                                    >
+                                        {item.title}
+                                    </Text>
+                                </View>
+                            </Card>
+                        </>
                     )
                 }}
             />

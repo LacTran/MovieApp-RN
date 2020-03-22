@@ -14,7 +14,7 @@ const Container = styled.ScrollView`
 
 
 const Sidebar = ({ navigation }) => {
-    const { type, setType, page, setPage } = useType();
+    const { type, setType, page, setPage, isOnSearch, setIsOnSearch } = useType();
     const { genres, setGenre } = useGenres();
     const renderMenuItem = (title, route, passedData) => {
         const filteredGenre = genres.filter(g => g.name === passedData)[0]
@@ -23,10 +23,12 @@ const Sidebar = ({ navigation }) => {
                 style={{ paddingLeft: 15, marginTop: 10 }}
                 onPress={() => {
                     if (filteredGenre) {
+                        setIsOnSearch(false)
                         setType('')
                         setGenre(filteredGenre.id);
                         setPage(1);
                     } else {
+                        (false)
                         setGenre(null)
                         setType(passedData)
                         setPage(1);
