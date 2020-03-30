@@ -1,10 +1,26 @@
 import React from 'react';
-import { View,TouchableOpacity } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 import config from '../../../../assets/config';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Modal } from 'react-native';
 import { WebView } from 'react-native-webview';
+import styled from 'styled-components';
 
+const WebviewContainer = styled.View`
+    height: 500px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 200px;
+`;
+
+const CloseButton = styled.TouchableOpacity`
+    border-color: ${config.theme.whiteColor};
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 12.5px;
+    margin-vertical: 10px;
+`
 
 const TrailerModal = ({
     modalOpen,
@@ -17,15 +33,7 @@ const TrailerModal = ({
             animationType="slide"
             transparent
         >
-            <View
-                style={{
-                    height: 500,
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    backgroundColor: 'rgba(0,0,0,0.8)',
-                    marginTop: 200,
-                }}
-            >
+            <WebviewContainer>
                 <View
                     style={{
                         flexGrow: 2,
@@ -48,16 +56,9 @@ const TrailerModal = ({
                         alignSelf: 'center'
                     }}
                 >
-                    <TouchableOpacity
+                    <CloseButton
                         onPress={() => {
                             setModalOpen(false)
-                        }}
-                        style={{
-                            borderColor: `${config.theme.whiteColor}`,
-                            borderWidth: 1,
-                            padding: 10,
-                            borderRadius: 12.5,
-                            marginVertical: 10
                         }}
                     >
                         <MaterialIcons
@@ -65,9 +66,9 @@ const TrailerModal = ({
                             size={30}
                             color={config.theme.whiteColor}
                         />
-                    </TouchableOpacity>
+                    </CloseButton>
                 </View>
-            </View>
+            </WebviewContainer>
         </Modal>
     )
 }

@@ -46,7 +46,7 @@ const Badge = styled.View`
     border-radius: 12.5px;
     background-color: ${config.theme.blueColor1}
     shadow-color: ${config.theme.blueColor2};
-    shadow-offset: {width: 3px; height:8px};
+    text-shadow-offset: 3px 8px;
     shadow-opacity: 0.8;
     shadow-radius: 5px;
     margin-right: 15px;
@@ -64,9 +64,56 @@ const TrailerButton = styled.TouchableOpacity`
     border-radius: 12.5px;
     background-color: ${config.theme.blueColor1}
     shadow-color: ${config.theme.blueColor2};
-    shadow-offset: {width: 3px; height:8px};
+    text-shadow-offset: 3px 8px;
     shadow-opacity: 0.8;
     shadow-radius: 5px;
+`;
+
+const HeroImageContainer = styled.View`
+    width: 100%;
+    height: 480px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: ${config.theme.blueColor1};
+    overflow: hidden
+`;
+
+const HeroImage = styled.Image`
+    width: 100%;
+    height: 480px;
+    resize-mode: stretch;
+`
+
+const CustomRow = styled.View`
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-vertical: 10px;
+`
+
+const DisplayImage = styled.Image`
+    height: 70px;
+    width: 100px;
+    resize-mode: contain;
+    border-radius: 12.5px;
+`;
+
+const LoadingContainer = styled.View`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
+`
+
+const LoadingCircle = styled(ActivityIndicator)`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+`;
+
+const HeaderContainer = styled.View`
+    padding-vertical: 10px;
 `
 
 const MovieDetailsScreen = ({ navigation }) => {
@@ -108,14 +155,13 @@ const MovieDetailsScreen = ({ navigation }) => {
         >
             {
                 isLoading ? (
-                    <View style={styles.container}>
-                        <ActivityIndicator
+                    <LoadingContainer>
+                        <LoadingCircle
                             animating={true}
                             color={`${config.theme.blueColor3}`}
                             size="large"
-                            style={styles.activityIndicator}
                         />
-                    </View>
+                    </LoadingContainer>
                 ) : (
                         <>
                             <BackButton
@@ -123,21 +169,11 @@ const MovieDetailsScreen = ({ navigation }) => {
                             >
                                 <MaterialIcons name="keyboard-backspace" size={40} color={config.theme.whiteColor} />
                             </BackButton>
-                            <View
-                                style={{
-                                    width: '100%',
-                                    height: 480,
-                                    borderBottomLeftRadius: '25px',
-                                    borderBottomRightRadius: '25px',
-                                    backgroundColor: `${config.theme.blueColor1}`,
-                                    overflow: 'hidden'
-                                }}
-                            >
-                                <Image
+                            <HeroImageContainer>
+                                <HeroImage
                                     source={{ uri: posterURL }}
-                                    style={styles.background}
                                 />
-                            </View>
+                            </HeroImageContainer>
                             <ContentContainer>
                                 <Text
                                     textColor={config.theme.blueColor3}
@@ -147,14 +183,7 @@ const MovieDetailsScreen = ({ navigation }) => {
                                 >
                                     {data.title.toUpperCase()} ({moment(data.release_date).format('YYYY')})
                                 </Text>
-                                <View
-                                    style={{
-                                        flexDirection: 'row',
-                                        justifyContent: 'space-around',
-                                        alignItems: 'center',
-                                        marginVertical: 10
-                                    }}
-                                >
+                                <CustomRow>
                                     {
                                         videoKey ? (
                                             <TrailerButton
@@ -187,7 +216,7 @@ const MovieDetailsScreen = ({ navigation }) => {
                                     >
                                         {data.vote_average} / 10
                                     </Text>
-                                </View>
+                                </CustomRow>
                                 <Row
                                     style={{
                                         alignItems: 'center',
@@ -200,8 +229,9 @@ const MovieDetailsScreen = ({ navigation }) => {
                                             marginBottom: 15
                                         }}
                                         data={genArr}
+                                        scrollEnabled={false}
                                         numColumns={columnNum}
-                                        keyExtractor={((item, index) => index)}
+                                        keyExtractor={((item, index) => item.name)}
                                         renderItem={({ item }) => {
                                             return (
                                                 <Badge
@@ -220,9 +250,7 @@ const MovieDetailsScreen = ({ navigation }) => {
                                         }}
                                     />
                                 </Row>
-                                <View
-                                    style={styles.headerContainer}
-                                >
+                                <HeaderContainer>
                                     <Text
                                         textColor={config.theme.blueColor3}
                                         size={config.theme.fontSizeBig}
@@ -231,7 +259,7 @@ const MovieDetailsScreen = ({ navigation }) => {
                                     >
                                         SYNOPSIS
                                     </Text>
-                                </View>
+                                </HeaderContainer>
                                 <Text
                                     textColor={config.theme.blueColor4}
                                     size={config.theme.fontSizeSmall}
@@ -239,9 +267,7 @@ const MovieDetailsScreen = ({ navigation }) => {
                                 >
                                     {data.overview}
                                 </Text>
-                                <View
-                                    style={styles.headerContainer}
-                                >
+                                <HeaderContainer>
                                     <Text
                                         textColor={config.theme.blueColor3}
                                         size={config.theme.fontSizeBig}
@@ -259,8 +285,8 @@ const MovieDetailsScreen = ({ navigation }) => {
                                             style={{
                                                 marginBottom: 0
                                             }}
-                                            horizontal={true}
-                                            keyExtractor={(item, index) => index}
+                                            horizontal
+                                            keyExtractor={(item, index) => item.name}
                                             data={castData}
                                             renderItem={({ item, index }) => {
                                                 const profileURL = `${baseURL}${profileSize}${item.profile_path}`;
@@ -282,24 +308,12 @@ const MovieDetailsScreen = ({ navigation }) => {
                                                     >
                                                         {
                                                             /null/.test(profileURL) ? (
-                                                                <Image
+                                                                <DisplayImage
                                                                     source={require('../../static/error.png')}
-                                                                    style={{
-                                                                        height: 70,
-                                                                        width: 100,
-                                                                        resizeMode: 'contain',
-                                                                        borderRadius: 12.5,
-                                                                    }}
                                                                 />
                                                             ) : (
-                                                                    <Image
+                                                                    <DisplayImage
                                                                         source={{ uri: profileURL }}
-                                                                        style={{
-                                                                            minHeight: 70,
-                                                                            width: "100%",
-                                                                            resizeMode: 'contain',
-                                                                            borderRadius: 12.5,
-                                                                        }}
                                                                     />
                                                                 )
                                                         }
@@ -315,10 +329,8 @@ const MovieDetailsScreen = ({ navigation }) => {
                                             }}
                                         />
                                     </View>
-                                </View>
-                                <View
-                                    style={styles.headerContainer}
-                                >
+                                </HeaderContainer>
+                                <HeaderContainer>
                                     <Text
                                         textColor={config.theme.blueColor3}
                                         size={config.theme.fontSizeBig}
@@ -352,7 +364,7 @@ const MovieDetailsScreen = ({ navigation }) => {
                                             )
                                     }
 
-                                </View>
+                                </HeaderContainer>
                             </ContentContainer>
                             {/* TRAILER MODAL */}
                             <TrailerModal
@@ -388,26 +400,6 @@ MovieDetailsScreen.navigationOptions = {
 }
 
 const styles = StyleSheet.create({
-    background: {
-        width: '100%',
-        height: 480,
-        resizeMode: 'stretch',
-    },
-    activityIndicator: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 80
-    },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: '100%'
-    },
-    headerContainer: {
-        paddingVertical: 10
-    }
 })
 
 export default MovieDetailsScreen;

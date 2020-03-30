@@ -15,13 +15,28 @@ const Container = styled.View`
     justify-content: space-between;
     width: 100%;
     background-color: ${config.theme.blueColor1}
+`;
+
+const InputContainer = styled(Row)`
+    justify-content: space-between;
+    width: 100%;
+    background-color: ${config.theme.whiteColor};
+    height: 30px;
+    padding: 5px;
+    border-radius: 12.5px;
+`
+
+const Input = styled.TextInput`
+    font-size: ${config.theme.fontSizeMid};
+    font-family: ${config.theme.fontFamilyLight};
+    flex: 1;
+    margin-left: 5px;
 `
 
 const Header = ({ toggleDrawer, term, onTermChange, onTermSubmit }) => {
-
     const [isFocused, setIsFocused] = useState(false);
     const barWidth = new Animated.Value(50);
-    const { isOnSearch, setIsOnSearch } = useType()
+    const { isOnSearch, setIsOnSearch } = useType();
 
     return (
         <Container>
@@ -44,25 +59,18 @@ const Header = ({ toggleDrawer, term, onTermChange, onTermSubmit }) => {
                                 <MaterialIcons name="search" size={40} color={config.theme.whiteColor} />
                             </TouchableOpacity>
                         ) : (
-                                <Row
-                                    style={{
-                                        justifyContent: "space-between",
-                                        width: "100%",
-                                        backgroundColor: `${config.theme.whiteColor}`,
-                                        height: 30,
-                                        padding: 5,
-                                        borderRadius: 12.5
-                                    }}
-                                >
-                                    <TextInput
+                                <InputContainer>
+                                    <Input
                                         placeholder="Search movies"
                                         placeholderTextColor={config.theme.blueColor1}
                                         value={term}
                                         onChangeText={onTermChange}
                                         autoCapitalize="none"
                                         autoCorrect={false}
-                                        onEndEditing={onTermSubmit}
-                                        style={styles.inputStyle}
+                                        onEndEditing={() => {
+                                            setIsFocused(false)
+                                            onTermSubmit()
+                                        }}
                                         autoFocus
                                         onFocus={() => {
                                             setIsFocused(true)
@@ -84,7 +92,7 @@ const Header = ({ toggleDrawer, term, onTermChange, onTermSubmit }) => {
                                         </TouchableOpacity>
                                         : <MaterialIcons name="search" size={20} color={config.theme.blueColor1} />
                                     }
-                                </Row>
+                                </InputContainer>
                             )
                     }
                 </Animated.View>
@@ -94,12 +102,6 @@ const Header = ({ toggleDrawer, term, onTermChange, onTermSubmit }) => {
 }
 
 const styles = StyleSheet.create({
-    inputStyle: {
-        fontSize: parseInt(config.theme.fontSizeMid),
-        fontFamily: `${config.theme.fontFamilyLight}`,
-        flex: 1,
-        marginLeft: 5
-    }
 })
 
 export default Header;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, FlatList, Text as NormalText, ActivityIndicator } from 'react-native';
+import { View, StyleSheet, FlatList, Text as NormalText, ActivityIndicator, SafeAreaView } from 'react-native';
 import Text from '../../components/Text';
 import Header from '../../components/Header';
 import styled from 'styled-components';
@@ -23,18 +23,43 @@ const Container = styled.View`
 const Button = styled.TouchableOpacity`
     padding: 10px;
     height: 35px;
-    background-color: ${config.theme.blueColor1}
-    border-radius: 12.5px;
-    shadow-color: ${config.theme.blueColor2};
-    shadow-offset: {width: 3px; height:8px};
-    shadow-opacity: 0.8;
-    shadow-radius: 5px;
     margin-right: 15px;
+    background-color: ${config.theme.blueColor1}
+    shadow-color: ${config.theme.blueColor2};
+    text-shadow-offset: 3px 5px;
+    border-radius: 12.5px;
+    shadow-opacity: 0.8;
+    shadow-radius: 9px;
+    elevation: 20;
+`;
+
+const LoadingContainer = styled.View`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
 `
 
+const LoadingCircle = styled(ActivityIndicator)`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+`;
 
+const ButtonRow = styled.ScrollView`
+    flex-direction: row;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-horizontal: 15px;
+`;
 
-
+const MessageContainer = styled.SafeAreaView`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+`
 
 const MainScreen = ({ navigation }) => {
     const { type, setType, page, setPage, isOnSearch, setIsOnSearch } = useType();
@@ -57,7 +82,8 @@ const MainScreen = ({ navigation }) => {
     }
 
     const [searchTerm, setSearchTerm] = useState('')
-    const [searchPage, setSearchPage] = useState(1)
+    const [searchPage, setSearchPage] = useState(1);
+    console.log(type)
 
     useEffect(() => {
         // by type (default display)
@@ -91,19 +117,20 @@ const MainScreen = ({ navigation }) => {
     }, [searchPage])
 
     const searchSubmit = async () => {
-        setIsOnSearch(true)
-        setIsLoading(true)
-        try {
-            const res = await searchKeyWord(searchTerm, searchPage);
-            // setSearchTerm('')
-            setData(res.data)
-        } finally {
-            setIsLoading(false)
-            // setIsOnSearch(false)
-            setType('')
-            setGenre(null)
+        if (searchTerm) {
+            setIsOnSearch(true)
+            setIsLoading(true)
+            try {
+                const res = await searchKeyWord(searchTerm, searchPage);
+                // setSearchTerm('')
+                setData(res.data)
+            } finally {
+                setIsLoading(false)
+                // setIsOnSearch(false)
+                setType('')
+                setGenre(null)
+            }
         }
-
     }
 
     const renderMoviesByType = (data) => {
@@ -118,9 +145,8 @@ const MainScreen = ({ navigation }) => {
                     onTermChange={setSearchTerm}
                     onTermSubmit={searchSubmit}
                 />
-                <ScrollView
+                <ButtonRow
                     horizontal
-                    style={styles.tabBar}
                     contentContainerStyle={{
                         alignItems: 'center',
                         justifyContent: 'space-around',
@@ -159,9 +185,9 @@ const MainScreen = ({ navigation }) => {
                             </Button>
                         )
                     })}
-                </ScrollView>
+                </ButtonRow>
                 <FlatList
-                    style={styles.flatList}
+                    style={{ marginBottom: 0 }}
                     data={data.results}
                     renderItem={({ item }) => {
                         const URL = `${baseURL}${size}${item.poster_path}`
@@ -185,7 +211,7 @@ const MainScreen = ({ navigation }) => {
                             />
                         )
                     }}
-                    keyExtractor={(item, index) => index}
+                    keyExtractor={(item) => item.id.toString()}
                 />
             </>
         )
@@ -197,25 +223,53 @@ const MainScreen = ({ navigation }) => {
                 isLoading ? (
                     <>
                         <Header />
-                        <View style={styles.container}>
-                            <ActivityIndicator
+                        <LoadingContainer>
+                            <LoadingCircle
                                 animating={true}
                                 color={`${config.theme.blueColor3}`}
                                 size="large"
-                                style={styles.activityIndicator} />
-                        </View>
+                            />
+                        </LoadingContainer>
                     </>
                 ) : (
-                        <>
-                            {renderMoviesByType(data)}
-                            <Footer
-                                pageNumber={isOnSearch ? searchPage : page}
-                                totalPage={data.total_pages}
-                                setPage={
-                                    isOnSearch ? setSearchPage : setPage
-                                }
-                            />
-                        </>
+                        data.results.length
+                            ?
+                            <>
+                                {renderMoviesByType(data)}
+                                <Footer
+                                    pageNumber={isOnSearch ? searchPage : page}
+                                    totalPage={data.total_pages}
+                                    setPage={
+                                        isOnSearch ? setSearchPage : setPage
+                                    }
+                                />
+                            </>
+                            : (
+                                <MessageContainer>
+                                    <Text
+                                        font={config.theme.fontFamilySemiBold}
+                                        size={config.theme.fontSizeBig}
+                                        textColor={config.theme.blueColor3}
+                                        textAlign="center"
+                                    >
+                                        No movies found
+                                    </Text>
+                                    <Button
+                                        onPress={() => {
+                                            setType('popular')
+                                        }}
+                                    >
+                                        <Text
+                                            font={config.theme.fontSizeSmall}
+                                            textColor={config.theme.blueColor3}
+                                            font={config.theme.fontFamilySemiBold}
+                                            textAlign="center"
+                                        >
+                                            Go Back
+                                        </Text>
+                                    </Button>
+                                </MessageContainer>
+                            )
                     )
             }
         </Container>
@@ -227,28 +281,6 @@ MainScreen.navigationOptions = {
 }
 
 const styles = StyleSheet.create({
-    flatList: {
-        marginBottom: 0
-    },
-    tabBar: {
-        flexDirection: 'row',
-        padding: 10,
-        width: "100%",
-        marginTop: 10,
-        marginHorizontal: 15
-    },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 70
-    },
-    activityIndicator: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 80
-    }
 })
 
 export default MainScreen;

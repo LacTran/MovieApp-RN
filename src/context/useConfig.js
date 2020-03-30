@@ -36,7 +36,7 @@ export function ConfigContextProvider({ children }) {
                 setIsLoading(false)
             }
         }
-        fetchAPIConfig()
+        fetchAPIConfig();
     }, [])
 
     return (

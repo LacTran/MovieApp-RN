@@ -14,11 +14,12 @@ const Container = styled.TouchableOpacity`
   margin-horizontal: 20px;
   padding-left:10px;
   background-color: ${config.theme.blueColor1}
-  border-radius: 12.5px;
   shadow-color: ${config.theme.blueColor2};
-  shadow-offset: {width: 3px; height:8px};
+  text-shadow-offset: 3px 5px;
+  border-radius: 12.5px;
   shadow-opacity: 0.8;
   shadow-radius: 9px;
+  elevation: 20;
 `
 
 
@@ -37,11 +38,11 @@ const TextArea = styled.View`
     padding-left: 10px;
 `;
 
-// const EffectIconArea = styled.View`
-//   position: absolute;
-//   top: 7px;
-//   right: -5px;
-// `;
+const ImageDisplay = styled.Image`
+    height: 180px;
+    width: 80%;
+    resize-mode: contain;
+`
 
 const FilmCard = ({
     imageSrc,
@@ -55,22 +56,12 @@ const FilmCard = ({
             <ImageArea>
                 {/null/.test(imageSrc)
                     ?
-                    <Image
+                    <ImageDisplay
                         source={require('../static/error.png')}
-                        style={{
-                            height: 180,
-                            width: "80%",
-                            resizeMode: 'contain',
-                        }}
                     />
                     : (
-                        <Image
+                        <ImageDisplay
                             source={{ uri: imageSrc }}
-                            style={{
-                                minHeight: 180,
-                                width: "80%",
-                                resizeMode: 'contain',
-                            }}
                         />
                     )}
             </ImageArea>
@@ -107,7 +98,6 @@ const FilmCard = ({
 }
 
 const styles = StyleSheet.create({
-
 })
 
 export default FilmCard;

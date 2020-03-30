@@ -27,11 +27,13 @@ const Sidebar = ({ navigation }) => {
                         setType('')
                         setGenre(filteredGenre.id);
                         setPage(1);
+                        navigation.toggleDrawer()
                     } else {
                         (false)
                         setGenre(null)
                         setType(passedData)
                         setPage(1);
+                        navigation.toggleDrawer()
                     }
                     navigation.navigate(route)
                 }}
@@ -50,7 +52,7 @@ const Sidebar = ({ navigation }) => {
     return (
         <Container
             contentContainerStyle={{
-                alignItems: 'left'
+                alignItems: 'flex-start'
             }}
             showsVerticalScrollIndicator={false}
         >

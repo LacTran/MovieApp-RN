@@ -21,9 +21,24 @@ const Card = styled.TouchableOpacity`
     border-radius: 12.5px;
     background-color: ${config.theme.blueColor1}
     shadow-color: ${config.theme.blueColor2};
-    shadow-offset: {width: 3px; height:8px};
+    text-shadow-offset: 3px 8px;
     shadow-opacity: 0.8;
     shadow-radius: 8px;
+`;
+
+const DisplayImage = styled.Image`
+    min-height: 150px;
+    width: 100%;
+    resize-mode: stretch;
+    flex: 1;
+`;
+
+const TextArea = styled.View`
+    flex: 1;
+    max-height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 `
 
 const RecommendedList = ({
@@ -48,7 +63,7 @@ const RecommendedList = ({
                 style={{ flex: 1 }}
                 data={data}
                 scrollEnabled={false}
-                keyExtractor={(item, index) => index}
+                keyExtractor={(item, index) => item.title}
                 numColumns={2}
                 renderItem={({ item, index }) => {
                     const URL = `${baseURL}${size}${item.poster_path}`;
@@ -68,39 +83,17 @@ const RecommendedList = ({
                             >
                                 {/null/.test(URL)
                                     ? (
-                                        <Image
+                                        <DisplayImage
                                             source={require('../../../static/error.png')}
-                                            style={{
-                                                minHeight: 150,
-                                                height: 180,
-                                                width: "100%",
-                                                resizeMode: 'contain',
-                                                flex: 1
-                                            }}
                                         />
                                     )
                                     : (
-                                        <Image
+                                        <DisplayImage
                                             source={{ uri: URL }}
-                                            style={{
-                                                minHeight: 150,
-                                                height: 180,
-                                                width: "100%",
-                                                resizeMode: 'stretch',
-                                                flex: 1
-                                            }}
                                         />
                                     )}
 
-                                <View
-                                    style={{
-                                        flex: 1,
-                                        maxHeight: 60,
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        padding: 5
-                                    }}
-                                >
+                                <TextArea>
                                     <Text
                                         textColor={config.theme.blueColor4}
                                         size={config.theme.fontSizeSmall}
@@ -108,7 +101,7 @@ const RecommendedList = ({
                                     >
                                         {item.title}
                                     </Text>
-                                </View>
+                                </TextArea>
                             </Card>
                         </>
                     )

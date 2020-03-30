@@ -45,7 +45,21 @@ const ContentContainer = styled.View`
 
 const Spacer = styled.View`
     margin-vertical: 10px;
+`;
+
+const LoadingContainer = styled.View`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
 `
+
+const LoadingCircle = styled(ActivityIndicator)`
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+`;
 
 const ActorDetailsScreen = ({ navigation }) => {
     const data = navigation.getParam('data')
@@ -73,14 +87,13 @@ const ActorDetailsScreen = ({ navigation }) => {
         <Container>
             {
                 isLoading ? (
-                    <View style={styles.container}>
-                        <ActivityIndicator
+                    <LoadingContainer>
+                        <LoadingCircle
                             animating={true}
                             color={`${config.theme.blueColor3}`}
                             size="large"
-                            style={styles.activityIndicator}
                         />
-                    </View>
+                    </LoadingContainer>
                 ) : (
                         <>
                             <BackButton
@@ -171,18 +184,6 @@ ActorDetailsScreen.navigationOptions = {
 }
 
 const styles = StyleSheet.create({
-    activityIndicator: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: 80
-    },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: '100%'
-    },
 })
 
 export default ActorDetailsScreen;
