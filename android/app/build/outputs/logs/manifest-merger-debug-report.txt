@@ -1,0 +1,533 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+MERGED from [:expo-permissions] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-screens] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-react-native-adapter] /Users/lactran/Self-study/MovieApp-rn/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-community_masked-view] /Users/lactran/Self-study/MovieApp-rn/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-safe-area-context] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/170ef3e43d4ea0a962ca0369eeede57a/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cf314bbf0f5c1b2105fd8fe850ee02fa/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/2f6bb55940d365d5b860d5e1861cbdd7/AndroidManifest.xml:17:1-24:12
+MERGED from [:expo-app-loader-provider] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-constants] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-error-recovery] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-30:12
+MERGED from [:expo-font] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-keep-awake] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-linear-gradient] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-21:12
+MERGED from [:expo-sqlite] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:expo-web-browser] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-web-browser/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-barcode-scanner-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-barcode-scanner-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-camera-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-camera-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-constants-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-constants-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-face-detector-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-face-detector-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-file-system-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-file-system-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-font-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-font-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-permissions-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-permissions-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-task-manager-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-task-manager-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-core] /Users/lactran/Self-study/MovieApp-rn/node_modules/@unimodules/core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-image-loader-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-image-loader-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:unimodules-sensors-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/lactran/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/03befc7ab579f908b629a3cf80cccd0a/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.browser:browser:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/ecc5faf36825f323461d7ed4d0a47a49/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/transition-1.1.0.aar/70e15e1e895d705c6288d83e8dcdcbba/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/16b35723aafbd12d52ebd70eb4cd835c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/44e462ceb20309e54a63addf4f16500c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/72831c77e17ff5adb02ffb2d0b795e21/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/94b3bbf140fbd04a9502c49503eaa06e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/a39e6c933a4c1c3a7d04c32e2a441a82/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/a3fc2d5bb1866e67f82e4ed911a58b8a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/bdda24b1c88c6ce4b3fbdcec38ada636/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/9543a12e3301d54ee825e2d6c5f6e384/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ad5b45dcd203f026876edd38bd57d897/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/0afb13816fc62df9ae3e61c49e49d494/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/0121d20fceb2dcf4d79cfa95fd6a8623/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0.aar/95c1361feb40a2c0547512eb1eec7fb5/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0.aar/133629ed3fe6e666c895ac77e091c657/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/8ab27d2800ca5bc38d107daea4556bb7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/f5740d28b8f7962e0a8310727e163381/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/44fd0c8de12e38ceff06723c6857d655/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/2ff39dc8bf9ecd2015a4cd873dfa79c2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/6508d09960f560377cc495be8c60ece5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/f18065cb96d4210c13b131c9efc7612b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/87427994d5122526f1876b43b996a90a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/4e87549c242970a1cb46d4d39d85d948/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/26cfd0d30212e30771eedb6920e60c08/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0.aar/8dae4e2613491e75480b6df1f1723d03/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/69d40592f4640d34c6fb1868c9aa65eb/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/24e029d8a696945053241aeea985b26b/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/0a5f00877ee7a4f8359e2d0b9bfd6c3e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/6501592df9358c8df388d86150a307cf/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/3540e714bad9d444c36a566b7066edac/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/2fdf5e547c44b6906cf6836e9b466e10/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2bf262acf174e52d5074fd6a4bdebb3d/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/772016392f73ea6470b866ce27aa1ca5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/4002368db88de91aac7a29d18153be64/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/52d3a15033fa088fee0fdd764f1c0ba0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/5d0a9d8fdd8992a53cdd3055fbd89681/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/d306f589eb169d12fa94377ec60ed5a0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/41c0a435089edcbd829ace3033a4a410/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/26c3e1d8f0df623ac0497ec6e965f9ec/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/fresco-2.0.0.aar/9a2adf170441ea7993b02b0ecc8e7e71/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-2.0.0.aar/928e1acb8b5479c96bb1fc9e980400c8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/drawee-2.0.0.aar/8336675ae12cf5f2c2b89f9607f672bc/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/nativeimagefilters-2.0.0.aar/8e4b624f583fc60bf20d980b70b25fa2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-2.0.0.aar/bf798fda58bd59c8d59d2d0b9526fbe9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/nativeimagetranscoder-2.0.0.aar/c3cc598507a098ab23db349415dee4da/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-2.0.0.aar/4b8f8eb5897d18405c4f6fc55e4563f1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4d4eb11284d785d2a65680dc23e2148b/AndroidManifest.xml:2:1-13:12
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:2:1-30:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-fbcore-2.0.0.aar/13db4951370c147dbf617be3c3ef8643/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+	package
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:2:5-27
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:1-48:12
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:5:22-75
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:8:5-75
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:8:22-72
+uses-permission#android.permission.READ_INTERNAL_STORAGE
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:9:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:10:22-72
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:11:5-74
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:11:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:12:5-66
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:12:22-63
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:13:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:16:5-81
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:12:5-81
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:17:5-79
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:14:5-79
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:18:5-65
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:18:22-62
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:19:5-72
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:19:22-69
+uses-permission#android.permission.READ_CALENDAR
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:20:5-72
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:20:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:21:5-73
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:21:22-70
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:22:5-80
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:22:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:23:5-71
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:23:22-68
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:24:5-81
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:24:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:25:5-73
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:25:22-70
+application
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:28:5-46:19
+MERGED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/170ef3e43d4ea0a962ca0369eeede57a/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/170ef3e43d4ea0a962ca0369eeede57a/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cf314bbf0f5c1b2105fd8fe850ee02fa/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cf314bbf0f5c1b2105fd8fe850ee02fa/AndroidManifest.xml:22:5-20
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-28:19
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-28:19
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-19:19
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/16b35723aafbd12d52ebd70eb4cd835c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/16b35723aafbd12d52ebd70eb4cd835c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/44e462ceb20309e54a63addf4f16500c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/44e462ceb20309e54a63addf4f16500c/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/72831c77e17ff5adb02ffb2d0b795e21/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/72831c77e17ff5adb02ffb2d0b795e21/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/0121d20fceb2dcf4d79cfa95fd6a8623/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/0121d20fceb2dcf4d79cfa95fd6a8623/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/69d40592f4640d34c6fb1868c9aa65eb/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/69d40592f4640d34c6fb1868c9aa65eb/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2bf262acf174e52d5074fd6a4bdebb3d/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2bf262acf174e52d5074fd6a4bdebb3d/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/26c3e1d8f0df623ac0497ec6e965f9ec/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/26c3e1d8f0df623ac0497ec6e965f9ec/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4d4eb11284d785d2a65680dc23e2148b/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4d4eb11284d785d2a65680dc23e2148b/AndroidManifest.xml:11:5-20
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:18:5-28:19
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:18:5-28:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/69d40592f4640d34c6fb1868c9aa65eb/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:30:7-39
+	android:roundIcon
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:32:7-52
+	android:icon
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:31:7-41
+	android:allowBackup
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:33:7-34
+	android:theme
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:34:7-38
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:29:7-38
+activity#com.movieapp.MainActivity
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:35:7-44:18
+	android:label
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:37:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:39:9-51
+	android:configChanges
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:38:9-79
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:36:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:40:9-43:25
+action#android.intent.action.MAIN
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:41:13-65
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:41:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:42:13-73
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:42:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:45:7-84
+	android:name
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml:45:17-81
+uses-sdk
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+MERGED from [:expo-permissions] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-permissions] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-permissions/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-react-native-adapter] /Users/lactran/Self-study/MovieApp-rn/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-react-native-adapter] /Users/lactran/Self-study/MovieApp-rn/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_masked-view] /Users/lactran/Self-study/MovieApp-rn/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/lactran/Self-study/MovieApp-rn/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/170ef3e43d4ea0a962ca0369eeede57a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-react-native-0.61.5.aar/170ef3e43d4ea0a962ca0369eeede57a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cf314bbf0f5c1b2105fd8fe850ee02fa/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cf314bbf0f5c1b2105fd8fe850ee02fa/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/2f6bb55940d365d5b860d5e1861cbdd7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0.aar/2f6bb55940d365d5b860d5e1861cbdd7/AndroidManifest.xml:20:5-22:41
+MERGED from [:expo-app-loader-provider] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-app-loader-provider] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-app-loader-provider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-constants] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-constants/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-error-recovery] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-error-recovery] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-error-recovery/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:expo-font] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-font] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-font/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-keep-awake] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-keep-awake/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-linear-gradient] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-linear-gradient] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-sqlite] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-sqlite] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-sqlite/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-web-browser] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-web-browser/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:expo-web-browser] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-web-browser/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-barcode-scanner-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-barcode-scanner-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-barcode-scanner-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-barcode-scanner-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-camera-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-camera-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-camera-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-camera-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-constants-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-constants-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-constants-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-constants-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-face-detector-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-face-detector-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-face-detector-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-face-detector-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-file-system-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-file-system-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-file-system-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-file-system-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-font-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-font-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-font-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-font-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-permissions-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-permissions-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-permissions-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-permissions-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-task-manager-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-task-manager-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-task-manager-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-task-manager-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-core] /Users/lactran/Self-study/MovieApp-rn/node_modules/@unimodules/core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-core] /Users/lactran/Self-study/MovieApp-rn/node_modules/@unimodules/core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-image-loader-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-image-loader-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-image-loader-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-image-loader-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-sensors-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:unimodules-sensors-interface] /Users/lactran/Self-study/MovieApp-rn/node_modules/unimodules-sensors-interface/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/lactran/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/03befc7ab579f908b629a3cf80cccd0a/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/lactran/.gradle/caches/transforms-1/files-1.1/android-jsc-r245459.aar/03befc7ab579f908b629a3cf80cccd0a/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.browser:browser:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/ecc5faf36825f323461d7ed4d0a47a49/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/ecc5faf36825f323461d7ed4d0a47a49/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/transition-1.1.0.aar/70e15e1e895d705c6288d83e8dcdcbba/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/transition-1.1.0.aar/70e15e1e895d705c6288d83e8dcdcbba/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/16b35723aafbd12d52ebd70eb4cd835c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-location-16.0.0.aar/16b35723aafbd12d52ebd70eb4cd835c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/44e462ceb20309e54a63addf4f16500c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/44e462ceb20309e54a63addf4f16500c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/72831c77e17ff5adb02ffb2d0b795e21/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-tasks-16.0.1.aar/72831c77e17ff5adb02ffb2d0b795e21/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/94b3bbf140fbd04a9502c49503eaa06e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/94b3bbf140fbd04a9502c49503eaa06e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/a39e6c933a4c1c3a7d04c32e2a441a82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/a39e6c933a4c1c3a7d04c32e2a441a82/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/a3fc2d5bb1866e67f82e4ed911a58b8a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/a3fc2d5bb1866e67f82e4ed911a58b8a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/bdda24b1c88c6ce4b3fbdcec38ada636/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/bdda24b1c88c6ce4b3fbdcec38ada636/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/9543a12e3301d54ee825e2d6c5f6e384/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/9543a12e3301d54ee825e2d6c5f6e384/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ad5b45dcd203f026876edd38bd57d897/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/ad5b45dcd203f026876edd38bd57d897/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/0afb13816fc62df9ae3e61c49e49d494/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/0afb13816fc62df9ae3e61c49e49d494/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/0121d20fceb2dcf4d79cfa95fd6a8623/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/0121d20fceb2dcf4d79cfa95fd6a8623/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0.aar/95c1361feb40a2c0547512eb1eec7fb5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/appcompat-resources-1.1.0.aar/95c1361feb40a2c0547512eb1eec7fb5/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0.aar/133629ed3fe6e666c895ac77e091c657/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.1.0.aar/133629ed3fe6e666c895ac77e091c657/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/8ab27d2800ca5bc38d107daea4556bb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/8ab27d2800ca5bc38d107daea4556bb7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/f5740d28b8f7962e0a8310727e163381/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0.aar/f5740d28b8f7962e0a8310727e163381/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/44fd0c8de12e38ceff06723c6857d655/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/44fd0c8de12e38ceff06723c6857d655/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/2ff39dc8bf9ecd2015a4cd873dfa79c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/2ff39dc8bf9ecd2015a4cd873dfa79c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/6508d09960f560377cc495be8c60ece5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/6508d09960f560377cc495be8c60ece5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/f18065cb96d4210c13b131c9efc7612b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/f18065cb96d4210c13b131c9efc7612b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/87427994d5122526f1876b43b996a90a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/87427994d5122526f1876b43b996a90a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/4e87549c242970a1cb46d4d39d85d948/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/4e87549c242970a1cb46d4d39d85d948/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/26cfd0d30212e30771eedb6920e60c08/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/activity-1.0.0.aar/26cfd0d30212e30771eedb6920e60c08/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0.aar/8dae4e2613491e75480b6df1f1723d03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.1.0.aar/8dae4e2613491e75480b6df1f1723d03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/69d40592f4640d34c6fb1868c9aa65eb/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-1.1.0.aar/69d40592f4640d34c6fb1868c9aa65eb/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/24e029d8a696945053241aeea985b26b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/24e029d8a696945053241aeea985b26b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/0a5f00877ee7a4f8359e2d0b9bfd6c3e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/0a5f00877ee7a4f8359e2d0b9bfd6c3e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/6501592df9358c8df388d86150a307cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/6501592df9358c8df388d86150a307cf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/3540e714bad9d444c36a566b7066edac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/3540e714bad9d444c36a566b7066edac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/2fdf5e547c44b6906cf6836e9b466e10/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/2fdf5e547c44b6906cf6836e9b466e10/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2bf262acf174e52d5074fd6a4bdebb3d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0.aar/2bf262acf174e52d5074fd6a4bdebb3d/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/772016392f73ea6470b866ce27aa1ca5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.1.0.aar/772016392f73ea6470b866ce27aa1ca5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/4002368db88de91aac7a29d18153be64/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.1.0.aar/4002368db88de91aac7a29d18153be64/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/52d3a15033fa088fee0fdd764f1c0ba0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/savedstate-1.0.0.aar/52d3a15033fa088fee0fdd764f1c0ba0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/5d0a9d8fdd8992a53cdd3055fbd89681/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/5d0a9d8fdd8992a53cdd3055fbd89681/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/d306f589eb169d12fa94377ec60ed5a0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/d306f589eb169d12fa94377ec60ed5a0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/41c0a435089edcbd829ace3033a4a410/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/41c0a435089edcbd829ace3033a4a410/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/26c3e1d8f0df623ac0497ec6e965f9ec/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/26c3e1d8f0df623ac0497ec6e965f9ec/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/fresco-2.0.0.aar/9a2adf170441ea7993b02b0ecc8e7e71/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/fresco-2.0.0.aar/9a2adf170441ea7993b02b0ecc8e7e71/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-2.0.0.aar/928e1acb8b5479c96bb1fc9e980400c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-2.0.0.aar/928e1acb8b5479c96bb1fc9e980400c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/drawee-2.0.0.aar/8336675ae12cf5f2c2b89f9607f672bc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/drawee-2.0.0.aar/8336675ae12cf5f2c2b89f9607f672bc/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/nativeimagefilters-2.0.0.aar/8e4b624f583fc60bf20d980b70b25fa2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/nativeimagefilters-2.0.0.aar/8e4b624f583fc60bf20d980b70b25fa2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-2.0.0.aar/bf798fda58bd59c8d59d2d0b9526fbe9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-2.0.0.aar/bf798fda58bd59c8d59d2d0b9526fbe9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/nativeimagetranscoder-2.0.0.aar/c3cc598507a098ab23db349415dee4da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/nativeimagetranscoder-2.0.0.aar/c3cc598507a098ab23db349415dee4da/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-2.0.0.aar/4b8f8eb5897d18405c4f6fc55e4563f1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-2.0.0.aar/4b8f8eb5897d18405c4f6fc55e4563f1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4d4eb11284d785d2a65680dc23e2148b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/soloader-0.6.0.aar/4d4eb11284d785d2a65680dc23e2148b/AndroidManifest.xml:7:5-9:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:8:5-10:41
+MERGED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-fbcore-2.0.0.aar/13db4951370c147dbf617be3c3ef8643/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-fbcore-2.0.0.aar/13db4951370c147dbf617be3c3ef8643/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lactran/Self-study/MovieApp-rn/android/app/src/main/AndroidManifest.xml
+provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
+ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+	android:exported
+		ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+	android:resource
+		ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+	android:name
+		ADDED from [:react-native-webview] /Users/lactran/Self-study/MovieApp-rn/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+uses-permission#android.permission.STORAGE
+ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+provider#expo.modules.filesystem.FileSystemFileProvider
+ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+	android:grantUriPermissions
+		ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+	android:authorities
+		ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+	android:exported
+		ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+	tools:replace
+		ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-48
+	android:name
+		ADDED from [:expo-file-system] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+service#expo.modules.location.services.LocationTaskService
+ADDED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:expo-location] /Users/lactran/Self-study/MovieApp-rn/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/6f3ebec683b43dc55fd3d0ce00acbd96/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/380725be834b201ef8e289967268f154/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:13:22-76
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:15:5-98
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:15:22-95
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:16:5-94
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:16:22-91
+service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:20:13-132
+service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:23:13-127
+service#io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService
+ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [io.nlopez.smartlocation:library:3.2.11] /Users/lactran/.gradle/caches/transforms-1/files-1.1/jetified-library-3.2.11.aar/8e24517076c2f7df2e7c7c259d99f695/AndroidManifest.xml:26:13-120
