@@ -9,6 +9,7 @@ npm-debug.*
 *.orig.*
 web-build/
 web-report/
+android/local.properties
 
 # macOS
 .DS_Store
