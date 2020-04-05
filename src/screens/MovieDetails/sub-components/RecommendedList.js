@@ -9,7 +9,8 @@ import { getMovieDetails } from '../../../services/services';
 const Container = styled.View`
     flex-direction: column;
     align-items: center;
-    padding-horizontal: 10px;
+    background-color: ${config.theme.blueColor1};
+    align-self: center;
 `
 
 const Card = styled.TouchableOpacity`
@@ -17,7 +18,7 @@ const Card = styled.TouchableOpacity`
     width: 45%;
     align-items: center;
     height: 250px;
-    margin-bottom: 25px;
+    margin: 0 auto 25px auto;
     border-radius: 12.5px;
     background-color: ${config.theme.blueColor1}
     shadow-color: ${config.theme.blueColor2};
@@ -44,7 +45,9 @@ const TextArea = styled.View`
 const RecommendedList = ({
     data,
     navigation,
-    setIsLoading
+    setIsLoading,
+    headerComponent,
+    footerComponent
 }) => {
     const { baseURL, size } = useConfig();
     return (
@@ -52,17 +55,26 @@ const RecommendedList = ({
             <FlatList
                 contentContainerStyle={{
                     alignItems: 'center',
-                    marginBottom: 15,
-                    marginTop: 20,
-                    paddingHorizontal: 25
                 }}
+                ListHeaderComponent={headerComponent}
+                ListHeaderComponentStyle={{
+                    flexDirection: 'column',
+                    flex: 1,
+                    alignItems: 'center',
+                    alignSelf: 'center',
+                    width: '100%',
+                }}
+                ListFooterComponent={footerComponent}
                 columnWrapperStyle={{
-                    justifyContent: 'space-between',
-                    width: '100%'
+                    justifyContent: 'space-around',
+                    alignItems: 'center',
+                    width: '100%',
                 }}
-                style={{ flex: 1 }}
+                style={{
+                    marginBottom: 15,
+                    width: '100%',
+                }}
                 data={data}
-                scrollEnabled={false}
                 keyExtractor={(item, index) => item.title}
                 numColumns={2}
                 renderItem={({ item, index }) => {

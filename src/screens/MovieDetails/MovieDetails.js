@@ -14,9 +14,10 @@ import RecommendedList from './sub-components/RecommendedList';
 
 
 
-const Container = styled.ScrollView`
+const Container = styled.View`
     display: flex;
     flex-direction: column;
+    flex: 1;
     background-color: ${config.theme.blueColor1}
 `
 
@@ -70,12 +71,14 @@ const TrailerButton = styled.TouchableOpacity`
 `;
 
 const HeroImageContainer = styled.View`
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 480px;
+    background-color: ${config.theme.blueColor1};
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: ${config.theme.blueColor1};
-    overflow: hidden
+    overflow: hidden;
 `;
 
 const HeroImage = styled.Image`
@@ -148,11 +151,7 @@ const MovieDetailsScreen = ({ navigation }) => {
     }, [data])
 
     return (
-        <Container
-            contentContainerStyle={{
-                alignItems: 'center'
-            }}
-        >
+        <Container>
             {
                 isLoading ? (
                     <LoadingContainer>
@@ -164,208 +163,192 @@ const MovieDetailsScreen = ({ navigation }) => {
                     </LoadingContainer>
                 ) : (
                         <>
-                            <BackButton
-                                onPress={() => { navigation.goBack() }}
-                            >
-                                <MaterialIcons name="keyboard-backspace" size={40} color={config.theme.whiteColor} />
-                            </BackButton>
-                            <HeroImageContainer>
-                                <HeroImage
-                                    source={{ uri: posterURL }}
-                                />
-                            </HeroImageContainer>
-                            <ContentContainer>
-                                <Text
-                                    textColor={config.theme.blueColor3}
-                                    size={config.theme.fontSizeMidBig}
-                                    font={config.theme.fontFamilyBold}
-                                    textAlign="center"
-                                >
-                                    {data.title.toUpperCase()} ({moment(data.release_date).format('YYYY')})
-                                </Text>
-                                <CustomRow>
-                                    {
-                                        videoKey ? (
-                                            <TrailerButton
-                                                onPress={() => {
-                                                    setModalOpen(true)
-                                                }}
+                            <RecommendedList
+                                data={recommendedMovies}
+                                navigation={navigation}
+                                setIsLoading={setIsLoading}
+                                headerComponent={
+                                    <>
+                                        <BackButton
+                                            onPress={() => { navigation.goBack() }}
+                                        >
+                                            <MaterialIcons name="keyboard-backspace" size={40} color={config.theme.whiteColor} />
+                                        </BackButton>
+                                        <HeroImageContainer>
+                                            <HeroImage
+                                                source={{ uri: posterURL }}
+                                            />
+                                        </HeroImageContainer>
+                                        <ContentContainer>
+                                            <Text
+                                                textColor={config.theme.blueColor3}
+                                                size={config.theme.fontSizeMidBig}
+                                                font={config.theme.fontFamilyBold}
+                                                textAlign="center"
                                             >
-                                                <MaterialIcons
-                                                    name="play-circle-outline"
-                                                    size={15}
-                                                    color={config.theme.whiteColor}
-                                                />
+                                                {data.title.toUpperCase()} ({moment(data.release_date).format('YYYY')})
+                                        </Text>
+                                            <CustomRow>
+                                                {
+                                                    videoKey ? (
+                                                        <TrailerButton
+                                                            onPress={() => {
+                                                                setModalOpen(true)
+                                                            }}
+                                                        >
+                                                            <MaterialIcons
+                                                                name="play-circle-outline"
+                                                                size={15}
+                                                                color={config.theme.whiteColor}
+                                                            />
+                                                            <Text
+                                                                textColor={config.theme.blueColor3}
+                                                                size={config.theme.fontSizeSmall}
+                                                                font={config.theme.fontFamilySemiBold}
+                                                                textAlign="center"
+                                                            >
+                                                                Trailer
+                                                        </Text>
+                                                        </TrailerButton>
+                                                    ) : (
+                                                            null
+                                                        )
+                                                }
                                                 <Text
-                                                    textColor={config.theme.blueColor3}
-                                                    size={config.theme.fontSizeSmall}
-                                                    font={config.theme.fontFamilySemiBold}
+                                                    textColor={config.theme.blueColor4}
+                                                    size={config.theme.fontSizeBig}
                                                     textAlign="center"
                                                 >
-                                                    Trailer
-                                                </Text>
-                                            </TrailerButton>
-                                        ) : (
-                                                null
-                                            )
-                                    }
-                                    <Text
-                                        textColor={config.theme.blueColor4}
-                                        size={config.theme.fontSizeBig}
-                                        textAlign="center"
-                                    >
-                                        {data.vote_average} / 10
-                                    </Text>
-                                </CustomRow>
-                                <Row
-                                    style={{
-                                        alignItems: 'center',
-                                        justifyContent: 'space-around',
-                                    }}
-                                >
-                                    <FlatList
-                                        contentContainerStyle={{
-                                            alignItems: 'center',
-                                            marginBottom: 15
-                                        }}
-                                        data={genArr}
-                                        scrollEnabled={false}
-                                        numColumns={columnNum}
-                                        keyExtractor={((item, index) => item.name)}
-                                        renderItem={({ item }) => {
-                                            return (
-                                                <Badge
-                                                    onPress={() => { }}
+                                                    {data.vote_average} / 10
+                                            </Text>
+                                            </CustomRow>
+                                            <Row
+                                                style={{
+                                                    alignItems: 'center',
+                                                    justifyContent: 'space-around',
+                                                }}
+                                            >
+                                                <FlatList
+                                                    contentContainerStyle={{
+                                                        alignItems: 'center',
+                                                        marginBottom: 15
+                                                    }}
+                                                    data={genArr}
+                                                    scrollEnabled={false}
+                                                    numColumns={columnNum}
+                                                    keyExtractor={((item, index) => item.name)}
+                                                    renderItem={({ item }) => {
+                                                        return (
+                                                            <Badge
+                                                                onPress={() => { }}
+                                                            >
+                                                                <Text
+                                                                    size={config.theme.fontSizeSmall}
+                                                                    font={config.theme.fontFamilySemiBold}
+                                                                    textColor={config.theme.blueColor3}
+                                                                    textAlign="center"
+                                                                >
+                                                                    {item.name}
+                                                                </Text>
+                                                            </Badge>
+                                                        )
+                                                    }}
+                                                />
+                                            </Row>
+                                            <HeaderContainer>
+                                                <Text
+                                                    textColor={config.theme.blueColor3}
+                                                    size={config.theme.fontSizeBig}
+                                                    font={config.theme.fontFamilyBold}
+                                                    textAlign="left"
                                                 >
-                                                    <Text
-                                                        size={config.theme.fontSizeSmall}
-                                                        font={config.theme.fontFamilySemiBold}
-                                                        textColor={config.theme.blueColor3}
-                                                        textAlign="center"
-                                                    >
-                                                        {item.name}
-                                                    </Text>
-                                                </Badge>
-                                            )
-                                        }}
-                                    />
-                                </Row>
-                                <HeaderContainer>
-                                    <Text
-                                        textColor={config.theme.blueColor3}
-                                        size={config.theme.fontSizeBig}
-                                        font={config.theme.fontFamilyBold}
-                                        textAlign="left"
-                                    >
-                                        SYNOPSIS
+                                                    SYNOPSIS
                                     </Text>
-                                </HeaderContainer>
-                                <Text
-                                    textColor={config.theme.blueColor4}
-                                    size={config.theme.fontSizeSmall}
-                                    font={config.theme.fontFamilyMedium}
-                                >
-                                    {data.overview}
-                                </Text>
-                                <HeaderContainer>
-                                    <Text
-                                        textColor={config.theme.blueColor3}
-                                        size={config.theme.fontSizeBig}
-                                        font={config.theme.fontFamilyBold}
-                                        textAlign="left"
-                                    >
-                                        CAST
-                                    </Text>
-                                    <View
-                                        style={{
-                                            marginTop: 10,
-                                        }}
-                                    >
-                                        <FlatList
-                                            style={{
-                                                marginBottom: 0
-                                            }}
-                                            horizontal
-                                            keyExtractor={(item, index) => item.name}
-                                            data={castData}
-                                            renderItem={({ item, index }) => {
-                                                const profileURL = `${baseURL}${profileSize}${item.profile_path}`;
-                                                return (
-                                                    <TouchableOpacity
-                                                        style={{
-                                                            width: 100,
-                                                            maxHeight: '100%',
-                                                        }}
-                                                        onPress={async () => {
-                                                            setIsLoading(true)
-                                                            try {
-                                                                const res = await getPersonData(item.id)
-                                                                navigation.navigate('ActorDetails', { data: res.data })
-                                                            } finally {
-                                                                setIsLoading(false)
-                                                            }
-                                                        }}
-                                                    >
-                                                        {
-                                                            /null/.test(profileURL) ? (
-                                                                <DisplayImage
-                                                                    source={require('../../static/error.png')}
-                                                                />
-                                                            ) : (
-                                                                    <DisplayImage
-                                                                        source={{ uri: profileURL }}
-                                                                    />
-                                                                )
-                                                        }
-                                                        <Text
-                                                            textColor={config.theme.blueColor4}
-                                                            size={config.theme.fontSizeSmall}
-                                                            textAlign="center"
-                                                        >
-                                                            {item.name}
-                                                        </Text>
-                                                    </TouchableOpacity>
-                                                )
-                                            }}
-                                        />
-                                    </View>
-                                </HeaderContainer>
-                                <HeaderContainer>
-                                    <Text
-                                        textColor={config.theme.blueColor3}
-                                        size={config.theme.fontSizeBig}
-                                        font={config.theme.fontFamilyBold}
-                                        textAlign="left"
-                                    >
-                                        RECOMMENDED MOVIES
-                                    </Text>
-                                    {
-                                        recommendedMovies.length ? (
-                                            <RecommendedList
-                                                data={recommendedMovies}
-                                                navigation={navigation}
-                                                setIsLoading={setIsLoading}
-                                            />
-                                        ) : (
+                                            </HeaderContainer>
+                                            <Text
+                                                textColor={config.theme.blueColor4}
+                                                size={config.theme.fontSizeSmall}
+                                                font={config.theme.fontFamilyMedium}
+                                            >
+                                                {data.overview}
+                                            </Text>
+                                            <HeaderContainer>
+                                                <Text
+                                                    textColor={config.theme.blueColor3}
+                                                    size={config.theme.fontSizeBig}
+                                                    font={config.theme.fontFamilyBold}
+                                                    textAlign="left"
+                                                >
+                                                    CAST
+                                            </Text>
                                                 <View
                                                     style={{
-                                                        marginBottom: 20
+                                                        marginTop: 10,
                                                     }}
                                                 >
-                                                    <Text
-                                                        font={config.theme.fontFamilySemiBold}
-                                                        size={config.theme.fontSizeMid}
-                                                        textColor={config.theme.blueColor4}
-                                                        textAlign="center"
-                                                    >
-                                                        NO RECOMMENDED MOVIES AVAILABLE!
-                                                    </Text>
+                                                    <FlatList
+                                                        style={{
+                                                            marginBottom: 0
+                                                        }}
+                                                        horizontal
+                                                        keyExtractor={(item, index) => item.name}
+                                                        data={castData}
+                                                        renderItem={({ item, index }) => {
+                                                            const profileURL = `${baseURL}${profileSize}${item.profile_path}`;
+                                                            return (
+                                                                <TouchableOpacity
+                                                                    style={{
+                                                                        width: 100,
+                                                                        maxHeight: '100%',
+                                                                    }}
+                                                                    onPress={async () => {
+                                                                        setIsLoading(true)
+                                                                        try {
+                                                                            const res = await getPersonData(item.id)
+                                                                            navigation.navigate('ActorDetails', { data: res.data })
+                                                                        } finally {
+                                                                            setIsLoading(false)
+                                                                        }
+                                                                    }}
+                                                                >
+                                                                    {
+                                                                        /null/.test(profileURL) ? (
+                                                                            <DisplayImage
+                                                                                source={require('../../static/error.png')}
+                                                                            />
+                                                                        ) : (
+                                                                                <DisplayImage
+                                                                                    source={{ uri: profileURL }}
+                                                                                />
+                                                                            )
+                                                                    }
+                                                                    <Text
+                                                                        textColor={config.theme.blueColor4}
+                                                                        size={config.theme.fontSizeSmall}
+                                                                        textAlign="center"
+                                                                    >
+                                                                        {item.name}
+                                                                    </Text>
+                                                                </TouchableOpacity>
+                                                            )
+                                                        }}
+                                                    />
                                                 </View>
-                                            )
-                                    }
-
-                                </HeaderContainer>
-                            </ContentContainer>
+                                            </HeaderContainer>
+                                            <HeaderContainer>
+                                                <Text
+                                                    textColor={config.theme.blueColor3}
+                                                    size={config.theme.fontSizeBig}
+                                                    font={config.theme.fontFamilyBold}
+                                                    textAlign="left"
+                                                >
+                                                    RECOMMENDED MOVIES
+                                            </Text>
+                                            </HeaderContainer>
+                                        </ContentContainer>
+                                    </>
+                                }
+                            />
                             {/* TRAILER MODAL */}
                             <TrailerModal
                                 modalOpen={modalOpen}

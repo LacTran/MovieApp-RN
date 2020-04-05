@@ -83,8 +83,7 @@ const MainScreen = ({ navigation }) => {
 
     const [searchTerm, setSearchTerm] = useState('')
     const [searchPage, setSearchPage] = useState(1);
-    console.log(type)
-
+    //  TODO: write custom hook 
     useEffect(() => {
         // by type (default display)
         async function fetchMoviesDataByType() {
